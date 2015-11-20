@@ -10,7 +10,8 @@ RUN rm -rf /etc/yum.repos.d/*.repo && \
   yum clean all && \
   yum install -y openssh-server && \
   touch /etc/rc.d/init.d/functions && \
-  /usr/sbin/sshd-keygen
+  /usr/sbin/sshd-keygen && \
+  chmod +x /runssh.sh
   
 EXPOSE 22
 ENTRYPOINT ["/runssh.sh"]
