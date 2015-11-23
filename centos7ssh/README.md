@@ -1,6 +1,6 @@
 ```
 docker daemon machine run
-# docker run -it --rm --name demo -p 10022:22 centos:7-sshd 654321
+# docker run -it --rm --name demo -p 10022:22 dotnetdr/centos:7-sshd 654321
 
 654321 is your ssh access password
 
